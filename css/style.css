@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #f1f3f3;
+  font-family: sans-serif;
+}
+.top-nav-bar{
+  height: 50px;
+  top:0;
+  position: sticky;
+  background: #66a490;
+  margin-bottom: 20px;
+  border-bottom: 3px solid orange;
+ 
+}
+.top-nav-bar .logo{
+  margin-top: 10px;
+}
+.top-nav-bar .logo span{
+  color: orange;
+}
+/* Style the search box inside the navigation bar */
+.top-nav-bar input[type=text] {
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+  position: relative;
+  width: 82%;
+  border-radius: 20px;
+}
+.top-nav-bar button{
+  position: absolute;
+  width: 28px;
+    height: 38px;
+    line-height: 2;
+    width: 11%;
+    border-radius: 20px;
+    left: 71%;
+    background: orange;
+
+}
+.top-nav-bar .search{
+  margin-top: 5px;
+}
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+/*sidebar*/
+.top-nav-bar #menu-bar ul{
+  display: flex;
+}
+.top-nav-bar #menu-bar ul li{
+  padding: 5px 20px;
+  background: orange;
+  margin-right:10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+.top-nav-bar #menu-bar ul li a{
+  color: #666666;
+  text-decoration: none;
+}
+.top-nav-bar #menu-bar ul li i{
+  margin-right: 5px;
+}
+#menu-btn,#close-btn{
+ font-size: 30px;
+ margin: 10px;
+ color: orange;
+ display: none;
+}
+/*header*/
+.header{
+  width: 100%;
+}
+.header .header-info{
+  display: flex;
+  width: 100%;
+}
+.header #side-bar{
+  
+  width: 15%;
+  font-size: 14px;
+  float: left;
+  z-index: 2;
+  background: #ddd;
+  display: block;
+}
+.header #side-bar ul{
+  margin-left: 10px;
+}
+.header #side-bar ul li{
+  list-style-type: none;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.header #side-bar ul li:hover{
+color: orange;
+}
+.header #side-bar ul li ul{
+  display: none;
+  z-index: 10;
+  top:77px;
+}
+.header #side-bar ul li:hover ul{
+  display: block;
+  height: 400px;
+  margin-left: 14%;
+  padding: 0 100px 10px 10px;
+  position: fixed;
+  background: #ececec;
+  box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.4)
+}
+.fa-angle-right{
+  margin-top: 4px;
+  margin-right: 8px;
+  float: right;
+}
+@media (max-width: 876px){
+  #side-bar{
+    width: 60%;
+    top:130px;
+    position: fixed;
+    font-size: 12px;
+    z-index: 20;
+    display: none;
+  }
+  .header #side-bar ul li ul{
+    top:133px;
+  }
+  .header #side-bar ul li:hover ul{
+    margin-left: 30%;
+  }
+  #menu-btn{
+    display: block;
+  }
+
+}
+/*slider*/
+.header .header-info .slider{
+  width: 84%;
+  margin-left: 1%;
+}
+
+
