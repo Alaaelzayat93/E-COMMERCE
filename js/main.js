@@ -8,3 +8,14 @@ function closemenu(){
   document.getElementById("menu-btn").style.display="block";
   document.getElementById("close-btn").style.display="none";
 }
+$(window).scroll(function(){
+var navbar = $('.top-nav-bar');
+if($(window).scrollTop() >= navbar.height()){
+if(!navbar.hasClass('scrolled')){
+navbar.addClass('scrolled fixed-top');
+} 
+}else{
+navbar.removeClass('scrolled navbar-fixed-top');
+}
+});
+

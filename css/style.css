@@ -7,6 +7,12 @@ body{
   background: #f1f3f3;
   font-family: sans-serif;
 }
+.scrolled{
+  background-color: #66a4905e !important;
+  color: #fff;
+  width: 100%;
+
+}
 .top-nav-bar{
   height: 50px;
   top:0;
@@ -137,12 +143,11 @@ color: orange;
   float: right;
 }
 @media (max-width: 876px){
-  #side-bar{
+ .header #side-bar{
     width: 60%;
     top:130px;
     position: fixed;
     font-size: 12px;
-    z-index: 20;
     display: none;
   }
   .header #side-bar ul li ul{
