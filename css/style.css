@@ -95,7 +95,7 @@ a.btn{
 }
 /*sidebar*/
 .top-nav-bar #menu-bar ul{
-    display: inline-block;
+    display: table;
   }
 .top-nav-bar #menu-bar ul li{
   padding: 5px 20px;
