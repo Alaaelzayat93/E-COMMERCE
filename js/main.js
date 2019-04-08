@@ -18,4 +18,6 @@ navbar.addClass('scrolled fixed-top');
 navbar.removeClass('scrolled navbar-fixed-top');
 }
 });
+/*login*/
+
 
