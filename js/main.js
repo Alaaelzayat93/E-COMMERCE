@@ -19,5 +19,13 @@ navbar.removeClass('scrolled navbar-fixed-top');
 }
 });
 /*login*/
+ $("#myModal").validate({
+  submitHandler: function(form) {
+    // some other code
+    // maybe disabling submit button
+    // then:
+    $(form).submit();
+  }
+ });
 
 

@@ -29,9 +29,23 @@ body{
   position: sticky;
   background: #66a490;
   margin-bottom: 20px;
-  border-bottom: 3px solid orange;
+  border-bottom: 3px solid orange;z-index: 1050
+}
+/*modal*/
+.modal-content{
+  background: #66a490;
+}
+a.btn{
+  color: #fff;
+  background: orange;
 
- 
+}
+/*end modal*/
+@media (max-width: 876px) {
+  .top-nav-bar {
+  z-index: 0
+}
+
 }
 .top-nav-bar .logo{
   margin-top: 10px;
@@ -81,8 +95,8 @@ body{
 }
 /*sidebar*/
 .top-nav-bar #menu-bar ul{
-  display: flex;
-}
+    display: inline-block;
+  }
 .top-nav-bar #menu-bar ul li{
   padding: 5px 20px;
   background: orange;
@@ -92,6 +106,7 @@ body{
   -o-border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  display: inline-block;
 }
 .top-nav-bar #menu-bar ul li a{
   color: #666666;
