@@ -67,22 +67,22 @@
                           <h4 class="modal-title">sign in</h4>
                         </div>
                         <div class="modal-body">
-                          <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label> required
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
-                  <a type="submit" class="btn btn-primary">Submit</a>
-                </form>
+                          <div id="LOGIN_FORM" class="form">
+        <form id="LOGIN" name="LOGIN" method="post" action="/index/secure/authentication?action=login">
+            <h1>Log In</h1>
+            <div id="LOGIN_EMAIL">
+                <label for="EMAIL">Email Address</label>
+                <input id="EMAIL" name="EMAIL" type="text" value="" tabindex="1" />
+            </div>
+            <div id="LOGIN_PASSWORD">
+                <label for="PASSWORD">Password</label>
+                <input id="PASSWORD" name="PASSWORD" type="password" value="" tabindex="2" />
+            </div>
+            <div id="LOGIN_SUBMIT">
+                <input id="SUBMIT" name="SUBMIT" type="submit" value="Submit" tabindex="3" />
+            </div>
+        </form>
+    </div>
                         </div>
                         <div class="modal-footer">
                           
@@ -126,12 +126,13 @@
   </div>
 
   <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
+    <p>Already have an account? <a href="#myModal">Sign in</a>.</p>
   </div>
-</form>
-      </div>
-      <div class="modal-footer">
+
+      
+      
         <a class="btn btn-default" data-dismiss="modal">Close</a>
+        </form>
       </div>
     </div>
 

@@ -35,11 +35,41 @@ body{
 .modal-content{
   background: #66a490;
 }
-a.btn{
-  color: #fff;
+#LOGIN h1{
+  text-align: center;
+}
+#SUBMIT{
   background: orange;
+    border: 0;
+    padding: 10px 20px;
+    margin-left: 31%;
 
 }
+#LOGIN_EMAIL{
+  margin-bottom: 20px;
+}
+#PASSWORD{
+  width: 84%;
+    height: 36px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/*modal*/
+a.btn{
+    background: orange;
+    color: #fff
+  }
+  a.registerbtn{
+    background: orange;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  a.btn-default{
+    width: 20%;
+    /* margin-left: 61%; */
+    /* right: 0; */
+    margin: auto;
+  }
 /*end modal*/
 @media (max-width: 876px) {
   .top-nav-bar {
